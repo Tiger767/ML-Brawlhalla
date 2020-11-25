@@ -6,7 +6,7 @@ Disclaimer: This bot is not for any competitive contexts, where such a bot would
 The code for each training trial is published here, but the Brawhalla training environments are not published.
 
 Trial 1
-- Goal of Trial 1: Bot will be able to 1v1 and perform better than a random agent.
+- Goal: Bot will be able to 1v1 and perform better than a random agent.
 - Actions: Left, Right, Left Heavy, Right Heavy, Left Light, Right light, Nothing
 - Input: Preprocessed screenshot x 3
 - Rewards: -time, dealt damage, -(recieved damage), enemey died, -(player died)
