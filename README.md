@@ -6,11 +6,30 @@ Disclaimer: This bot is not for any competitive contexts, where such a bot would
 The code for each training trial is published here, but the Brawhalla training environments are not published.
 
 Trial 1
-- Goal: Bot will be able to 1v1 and perform better than a random agent.
+- Goal: The agent will be able to 1v1 and perform better than a random agent.
 - Actions: Left, Right, Left Heavy, Right Heavy, Left Light, Right light, Nothing
 - Input: Preprocessed screenshot
 - Rewards: -time, dealt damage, -(recieved damage), enemey died, -(player died)
-- Simplifications: Trained on only 1 character, limited number of actions, only uses fist, only one area used
+- Simplifications: Trained on only 1 character, limited number of actions, only uses fist, only one stadium used
+- Algorithm: Policy Gradients (No Critic)
+- Actor
+  - Model: Input -> Conv(32, 5) -> Conv(64, 3) -> Conv(128, 3) -> Conv(256, 3) -> Conv(512, 3) -> Flatten() -> Dense(7, Softmax)
+    - Conv(filter, kernel_size) = Conv2D(filter, kernel_size=kernel_size, strides=2) -> ReLu -> BatchNorm 
+  - Optimizer: Adam(.0001)
+- Agent Parameters
+  - Discount Rate: .99
+  - Memory: 100000
+- Learning Parameters
+  - Batch Size: 32
+  - Mini-Batch size (Sample size from all experience): 3200
+  - Epochs (Number of complete gradient steps per episode): 1
+- Environment Parameters:
+  - Frames stacked to make a state: 3
+- Training
+  - Episodes of Random Agent (exploring): 5
+  - Episodes of Policy Gradient Agent (convergence episodes): 180
+  - Epochs: 180
+- Conclusion: The agent, on average, is better than the random agent, but not by much. However, progress was seen, suggesting that training the agent for a more extended period would achieve the goal in a much more viewable manner.
 
 Gameplays from a random agent:
 ![](./gifs/random_1.gif)
