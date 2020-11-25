@@ -8,7 +8,7 @@ The code for each training trial is published here, but the Brawhalla training e
 Trial 1
 - Goal: Bot will be able to 1v1 and perform better than a random agent.
 - Actions: Left, Right, Left Heavy, Right Heavy, Left Light, Right light, Nothing
-- Input: Preprocessed screenshot x 3
+- Input: Preprocessed screenshot
 - Rewards: -time, dealt damage, -(recieved damage), enemey died, -(player died)
 - Simplifications: Trained on only 1 character, limited number of actions, only uses fist, only one area used
 
