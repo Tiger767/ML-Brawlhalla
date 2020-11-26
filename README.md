@@ -64,7 +64,9 @@ Trial 2
 - Conclusion: This agent averages a reward of about 5, which is much better than the random agent. The agent is noticeably smarter than the random agent as seen in the gameplay videos.
 
 Gameplay from a random agent (watch at +2x speed):
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/276vlZKAxcQ/0.jpg)](https://youtu.be/276vlZKAxcQ)
+
+[![Random Agent Gameplay](https://img.youtube.com/vi/276vlZKAxcQ/0.jpg)](https://youtu.be/276vlZKAxcQ)
 
 Gameplay from trial 2 agent (watch at +2x speed):
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/0AEZq08cpEo/0.jpg)](https://youtu.be/0AEZq08cpEo)
+
+[![Trial 2 Agent Gameplay](https://img.youtube.com/vi/0AEZq08cpEo/0.jpg)](https://youtu.be/0AEZq08cpEo)
