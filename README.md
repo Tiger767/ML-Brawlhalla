@@ -3,7 +3,7 @@ The purpose of this repository is to publish results achieved while attempting a
 
 Disclaimer: This bot is not for any competitive contexts, where such a bot would be deemed cheating. This bot is solely created and published to show the potential of machine learning algorithms in a popular game. Also, no hacking of the game was performed, meaning the game's inner state was not touched (ex. reading the game's memory). All actions were performed with keypresses, and the states of the game were observed through screenshots.
 
-The code for each training trial is published here, but the Brawhalla training environments are not published.
+The code for some of the trials is published here, but the Brawhalla training environments are not published.
 
 Trial 1
 - Goal: The agent will be able to 1v1 and perform better than a random agent.
@@ -62,6 +62,27 @@ Trial 2
   - Random Agent Average of 20 Episodes: -6.249
   - Random Agent Best Total Reward: 21.561
 - Conclusion: This agent averages a reward of about 5, which is much better than the random agent. The agent is noticeably smarter than the random agent as seen in the gameplay videos.
+
+Trial 3 (Work in Progress)
+ - Goal: The agent will be able to 1v1 and on average perform better against a medium difficulty bot.
+ - Actions: Not determined
+ - Input: Preprocessed screenshot (follow; view of player with immediate surroundings), active actions, and healths of both players
+ - Rewards: -time, dealt damage, -(recieved damage), enemey killed, -(player killed), enemy suicide, -(player suicide)
+ - Simplifications: Trained on only one character, only one stadium used, only fights one character, fighting a medium bot
+ - Algorithm: Not determined
+- Agent Parameters
+  - Discount Rate: .99
+  - Memory: No limit
+- Learning Parameters
+  - Batch Size: 32
+  - Mini-Batch Size (Sample size from all experience): Not determined
+  - Epochs (Number of complete gradient steps per episode): Not determined
+- Environment Parameters:
+  - Frames Stacked (for a single state): Not determined
+- Training
+  - Episodes of Random Agent (exploring): Not determined
+  - Episodes of Policy Gradient Agent (convergence episodes): Not determined
+  - Epochs: Not determined
 
 Gameplay from a random agent (watch at +2x speed):
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/276vlZKAxcQ/0.jpg)](https://youtu.be/276vlZKAxcQ)
