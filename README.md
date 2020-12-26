@@ -5,6 +5,8 @@ Disclaimer: This bot is not for any competitive contexts, where such a bot would
 
 The code for some of the trials is published here, but the Brawhalla training environments are not published.
 
+***This project is still a work in progress with at least a trial 3 agent expected***
+
 Trial 1
 - Goal: The agent will be able to 1v1 and perform better than a random agent.
 - Actions: Left, Right, Left Heavy, Right Heavy, Left Light, Right light, Nothing
@@ -85,7 +87,9 @@ Trial 3 (Work in Progress)
   - Epochs: Not determined
 
 Gameplay from a random agent (watch at +2x speed):
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/276vlZKAxcQ/0.jpg)](https://youtu.be/276vlZKAxcQ)
 
-Gameplay from trial 2 agent (watch at +2x speed):
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/0AEZq08cpEo/0.jpg)](https://youtu.be/0AEZq08cpEo)
+[![Random Agent Gameplay](https://img.youtube.com/vi/276vlZKAxcQ/0.jpg)](https://youtu.be/276vlZKAxcQ)
+
+Gameplay from the trial 2 agent (watch at +2x speed):
+
+[![Trial 2 Agent Gameplay](https://img.youtube.com/vi/0AEZq08cpEo/0.jpg)](https://youtu.be/0AEZq08cpEo)
