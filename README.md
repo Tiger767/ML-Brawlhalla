@@ -99,5 +99,6 @@ Gameplay from the trial 2 agent (watch at +2x speed):
 
 [![Trial 2 Agent Gameplay](https://img.youtube.com/vi/0AEZq08cpEo/0.jpg)](https://youtu.be/0AEZq08cpEo)
 
-Gameplay from the trial 3 agent
+Gameplay from the trial 3 agent:
+
 [![Trial 3 Agent Gameplay](https://img.youtube.com/vi/LYZ-LCBU9aU/0.jpg)](https://youtu.be/LYZ-LCBU9aU)
