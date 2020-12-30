@@ -5,8 +5,6 @@ Disclaimer: This bot is not for any competitive contexts, where such a bot would
 
 The code for some of the trials is published here, but the Brawhalla training environments are not published.
 
-***This project is still a work in progress with at least a trial 3 agent expected***
-
 Trial 1
 - Goal: The agent will be able to 1v1 and perform better than a random agent.
 - Actions: Left, Right, Left Heavy, Right Heavy, Left Light, Right light, Nothing
@@ -65,26 +63,33 @@ Trial 2
   - Random Agent Best Total Reward: 21.561
 - Conclusion: This agent averages a reward of about 5, which is much better than the random agent. The agent is noticeably smarter than the random agent as seen in the gameplay videos.
 
-Trial 3 (Work in Progress)
+Trial 3
  - Goal: The agent will be able to 1v1 and on average perform better against a medium difficulty bot.
- - Actions: Not determined
+ - Actions: Neutral, Left, Right, Up, Down, Heavy, Light, Throw, Dodge
+  - Directional actions can be combined with other actions
  - Input: Preprocessed screenshot (follow; view of player with immediate surroundings), active actions, and healths of both players
- - Rewards: -time, dealt damage, -(recieved damage), enemey killed, -(player killed), enemy suicide, -(player suicide)
+ - Rewards: -time, dealt damage, -(recieved damage), enemey killed, -(player killed), enemy suicide, -(player suicide), -(attack action)
  - Simplifications: Trained on only one character, only one stadium used, only fights one character, fighting a medium bot
- - Algorithm: Not determined
+ - Algorithm: Policy Gradients (No Critic)
 - Agent Parameters
   - Discount Rate: .99
-  - Memory: No limit
+  - Memory: No limit (using ETDMemory)
 - Learning Parameters
   - Batch Size: 32
-  - Mini-Batch Size (Sample size from all experience): Not determined
-  - Epochs (Number of complete gradient steps per episode): Not determined
+  - Mini-Batch Size (Sample size from all experience): 64
+  - Epochs (Number of complete gradient steps per episode): 1
 - Environment Parameters:
-  - Frames Stacked (for a single state): Not determined
+  - Frames Stacked (for a single state): 3
 - Training
-  - Episodes of Random Agent (exploring): Not determined
-  - Episodes of Policy Gradient Agent (convergence episodes): Not determined
-  - Epochs: Not determined
+  - Episodes of Random Agent (exploring): 50
+  - Episodes of Policy Gradient Agent (convergence episodes): 50
+  - Epochs: 50
+- Testing:
+  - Average of 20 Episodes: -0.241
+  - Best Total Reward: 4.874
+  - Random Agent Average of 50 Episodes: -0.09
+  - Random Agent Best Total Reward: 15.226
+- Conclusion: This agent, on average, is worse than the random agent. The limited number of episodes played (100 in total with the 50th having the highest convergence) for the more complex action space may explain why this agent performed poorly. Ultimately, the goal of this trial was not reached in any sense.
 
 Gameplay from a random agent (watch at +2x speed):
 
@@ -93,3 +98,6 @@ Gameplay from a random agent (watch at +2x speed):
 Gameplay from the trial 2 agent (watch at +2x speed):
 
 [![Trial 2 Agent Gameplay](https://img.youtube.com/vi/0AEZq08cpEo/0.jpg)](https://youtu.be/0AEZq08cpEo)
+
+Gameplay from the trial 3 agent
+[![Trial 3 Agent Gameplay](https://img.youtube.com/vi/LYZ-LCBU9aU/0.jpg)](https://youtu.be/LYZ-LCBU9aU)
